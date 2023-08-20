@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Property Part 5</title>
+</head>
+<!--
+        9.box-sizing property :
+                            1. This property effect on border and padding.
+                            2. it will use this property then width is not change but height is change in our page.
+                            3. it wil use not this property then fully effect on width(increase width).
+                            4. box-sizing:border-box;
+                            5. box-sizing:content-box; by default
+
+        10.overflow property :
+                            when content outside the border, it called overflow.
+
+                            Three type :
+                            1.overflow
+                            2.overflow-x :: horizontal use only
+                            3.overflow-y :: vertical use only
+
+                            1.overflow :horizontal and vertical
+                                        four type
+                                        1.hidden  :: hidden text and content.
+                                        2.scroll :: fix scroll visible
+                                        3.auto  :: according to text and content.
+                                        4.visible :: by default
+
+                                        exp. overflow:auto;
+
+                            2.overflow-x : horizontal only
+                                        four type
+                                        1.hidden  :: hidden text and content.
+                                        2.scroll :: fix scroll visible
+                                        3.auto  :: according to text and content.
+                                        4.visible :: by default
+
+                                        exp. overflow-x:hidden; best exp for image
+
+                            3.overflow-y : vertical only
+                                        four type
+                                        1.hidden  :: hidden text and content.
+                                        2.scroll :: fix scroll visible
+                                        3.auto  :: according to text and content.
+                                        4.visible :: by default
+
+                                        exp. overflow-y:scroll; best exp for image
+    -->
+<style>
+    .box-sizing {
+        border: 50px solid red;
+        width: 400px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    .overflow {
+        border: 3px solid black;
+        width: 250px;
+        height: 250px;
+        
+    }
+    .overflow-hidden {
+        border: 3px solid black;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        margin-top: 100px;
+    }
+    .overflow-scroll {
+        border: 3px solid black;
+        width: 250px;
+        height: 250px;
+        overflow: scroll;
+        margin-top: 20px;
+    }
+    .overflow-auto {
+        border: 3px solid black;
+        width: 250px;
+        height: 250px;
+        overflow: auto;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+    <div class="box-sizing">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minima eius veniam asperiores animi consectetur
+            ipsa sint, ea expedita quibusdam omnis? Perferendis ipsum at nesciunt eveniet dolorem possimus laudantium
+            dicta! </p>
+    </div>
+
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex magnam
+            quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+        </p>
+    </div>
+    <div class="overflow-hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex magnam
+            quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+        </p>
+    </div>
+    <div class="overflow-scroll">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex magnam
+            quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+        </p>
+    </div>
+    <div class="overflow-auto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex
+            magnam quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Deserunt amet corporis nihil est. Repellendus ex magnam
+            quas laudantium ut incidunt cum ducimus, iusto quidem asperiores atque at aliquam culpa ullam.
+        </p>
+    </div>
+</body>
+
+</html>
