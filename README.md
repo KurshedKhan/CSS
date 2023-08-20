@@ -11,3 +11,7 @@ CSS Stands for Cascading Style sheet <br> <br>
 2.Notepad++<br>
 3.VS Code<br>
 4.Sublime<br><br>
+
+# CSS Property
+    1.color Property
+    2.background-color Property
