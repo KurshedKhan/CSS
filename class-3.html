@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Property Part 3</title>
+    <!--
+            This is multi line Comment.
+
+            3.Border Property :
+                    1.longhand property :
+                                border-width: 1px;
+                                border-style: solid;
+                                border-color: red;
+                                
+                    2.shorthand property :
+                                border:1px solid black;
+
+                    3.Single Property :
+                                border-top:5px;
+                                border-right:5px;
+                                border-bottom:5px;
+                                border-left:5px;
+                                
+                    Note: border-style => solid,dashed,dotted,double,groove
+                                          inset,outset,none,ridge,mix
+
+                        : mix =>  border-style:solid solid double double;
+
+
+            4.Outline Property :
+                    1.longhand property :
+                                outline-width: 1px;
+                                outline-style: solid;
+                                outline-color: red;
+                                
+                    2.shorthand property :
+                                outline:1px solid black;
+                                outline-offset:2px; ==>it property use between gap in border.
+
+                    Note: mix is not use in outline-style property.
+
+            
+        -->
+    <style>
+        
+        h1{
+            border-width: 10px;
+            border-style:solid solid double double;
+            border-color: red;
+
+            outline-width: 10px;
+            outline-style: solid;
+            outline-color: green;
+            outline-offset: 3px;
+        }
+        h2{
+            border: 8px solid green;
+            outline: 8px solid red;
+            outline-offset: 5px;
+        }
+        h3{
+            border-top:5px solid green;
+            border-bottom:5px solid green;
+        }
+
+        h4{
+            border-top:5px;
+            border-bottom:5px;
+            border-color: green;
+            border-style: solid;
+        }
+
+    </style>
+</head>
+<body>
+   <h1>Hello World..!</h1> 
+   <h2>My border</h2>
+   <h3>My next border</h3>
+   <h4>My next Next border</h4>
+</body>
+</html>
