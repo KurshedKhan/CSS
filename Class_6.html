@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Property Part 6</title>
+    <!--
+        11.border-radius property :
+                                This property is use of round the corner of border.
+
+                        1.longhand property:
+                            1.border-top-left-radius:10px;
+                            2.border-top-right-radius:10px;
+                            3.border-bottom-left-radius:10px;
+                            4.border-top-right-radius:10px;
+
+                        2.shorthand property:
+                            1.border-radius:10px; ==>apply four corner.
+                            2.border-radius:10px 20px; ==> apply opposite corner.
+                        
+                        3.Create a logo :
+                            1.width:200px; ==>same px
+                            2.heigh:200px; ==>same px
+                            3.border-radius:50%;
+                        
+                        4.border-radius value
+                            1.px 
+                            2.%
+                            3.border-radius: top-left top-right bottom-right bottom-left;
+
+        12.box-shadow property :
+
+                        1.box-shadow:h-offset v-offset blur spread color;
+                        
+                        2.box-shadow:3px 3px 2px 20px black;
+
+                        3.opposite side :
+                          box-shadow: -3px -3px 2px 20px black;
+                        
+                        4.inside the border :
+                          box-shadow : 4px 4px 3px 20px black inset;
+                        
+                        5.multiple box-shadow :
+                          box-shadow:3px 3px 2px 20px black ,6px 6px 4px 40px red;
+                        
+        13.float property :
+                        
+                        1.we have two container,second container by default bottom in the
+                        first container.we want to second container, right side the first
+                        container then use float property.
+
+                        2.two type
+                            1.float:right;
+                            2.float:left;
+                            3.float:none; ==> by default
+
+                        
+    -->
+    <style>
+        .border-radius{
+            border: 1px solid tan;
+            width: 300px;
+            border-radius:10px 50px;
+            padding: 20px;
+            background-color: tan;
+            float:right;
+        }
+        .box-shadow{
+            border: 1px solid tan;
+            width: 300px;
+            margin: 40px 0px;
+            padding: 20px;
+            background-color: tan;
+            box-shadow: 5px 5px 5px 3px black;
+            float: left;
+        }
+        .box-shadow-inset{
+            border: 1px solid tan;
+            width: 300px;
+            margin: 40px 0px;
+            padding: 20px;
+            background-color: tan;
+            box-shadow: 5px 5px 5px 3px black inset;
+            float: right;
+        }
+        .box-shadow-1{
+            border: 1px solid tan;
+            width: 300px;
+            margin: 40px 40px;
+            padding: 20px;
+            background-color: tan;
+            box-shadow: 5px 5px 5px 3px black,-5px -5px 5px 3px black;
+            float: right;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="border-radius">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem quibusdam atque itaque doloremque! Neque, quas quos sunt optio rem impedit sed adipisci quaerat. Amet at non molestiae accusantium corporis!</p>
+    </div>
+    <div class="box-shadow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem quibusdam atque itaque doloremque! Neque, quas quos sunt optio rem impedit sed adipisci quaerat. Amet at non molestiae accusantium corporis!</p>
+    </div>
+    <div class="box-shadow-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem quibusdam atque itaque doloremque! Neque, quas quos sunt optio rem impedit sed adipisci quaerat. Amet at non molestiae accusantium corporis!</p>
+    </div>
+    <div class="box-shadow-inset">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quidem quibusdam atque itaque doloremque! Neque, quas quos sunt optio rem impedit sed adipisci quaerat. Amet at non molestiae accusantium corporis!</p>
+    </div>
+    
+</body>
+</html>
