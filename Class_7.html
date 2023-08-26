@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Property in CSS Part 7</title>
+    <!--
+        =======> CSS Font Property :=>
+
+        15.font-size :
+                    You want to increase your text size  , you will use this property.
+                    
+                    predefine words : ==> large,larger,small,smaller,medium,
+                                            x-large,xx-larger,x-small,xx-small etc.
+                    
+                    Font-size : three type: 1.px, 2.100% , 3.em
+                              : 1.px ==>> This property use on select element.
+                              : 2.100% ==>> This property use parent container according.
+                              : 3.em ==>> This property use also parent container according.
+                              : 1em == 18px == 100% (Most Important Point)
+                    
+        16.line-height : 
+                        : You want to space between two line then you use this property.
+                    
+                        : line-height : 30px;
+        
+        17.font-weight :
+                        : You want to bold your text then use this property.
+                        : type : bold ,bolder,lighter,normal
+                        : bolder and lighter property apply in parent container.
+                        : This property use of number also. like 100 to 900.
+                        : 400 => normal
+                        : 700 => bold
+                        : 700+ => bolder  => (use of font-family also)
+                        : 700- => lighter => (use of font-family also)
+
+        18.font-style  :
+                        : type : normal,italic,oblique
+                        : font-style : italic;(use of font-family also)        
+                        : italic and oblique are same effect .
+                        : you want to see this effect , you will apply different
+                        font-family .
+                        : some time use italic and some time use oblique.
+        
+        19.font-variant :
+                        : type : normal, small-caps(paragraph first letter is little big then other letter. and all letter is big also.)
+        
+        20.font : shorthand property:
+                 
+                font : font-style font-variant font-weight font-size/line-light font-family;
+                font : italic small-caps bold 1em/35px arial; ==>> like something.
+    --> 
+    
+    <style>
+        body{
+            font-size: xx-large;
+        }
+        .container{
+            line-height:30px;
+            font-weight: 600;
+        }
+        #box{
+            
+            border: 1px solid black;
+            width: 300px;
+            padding: 20px;
+            font-size: 18px;
+            font-family: arial;
+            font-weight:bolder ;
+            font-style:italic;
+            font-variant: small-caps;
+        }  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum magnam quae corporis, possimus deserunt voluptatum placeat? Provident a pariatur incidunt aliquam fuga, officiis sit aliquid velit dicta fugiat optio voluptatem?</p>
+        </div>
+        <div id="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum magnam quae corporis, possimus deserunt voluptatum placeat? Provident a pariatur incidunt aliquam fuga, officiis sit aliquid velit dicta fugiat optio voluptatem?</p>
+        </div>
+    </div>
+</body>
+</html>
