@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Property Part 8</title>
+    <!--
+        1. text property :
+
+            21. text-align : alignment of the text
+                       : type : left,right,center,justify.
+        
+
+            22. text-align-last : alignment of last line in the paragraph.
+                            :type : left,right,center,justify.
+        
+            23.text-transform : change case : capital,small,capital-small
+                          : normal,uppercase,lowercase,capitalize.
+        
+            24.text-indent : paragraph first line indent right side.
+                        text-indent : 40px;
+
+            25.word-spacing : space between in words.
+                        word-spacing:40px;
+        
+            26.letter-spacing : space between in letters.
+                        letter-spacing:40px;
+        
+       
+        2. text-decoration property
+            
+            27. text-decoration-line :
+                                        : type : underline,overline,line-through
+                                        : underline => bottom line of the sentence.
+                                        : overline => top line of the sentence.
+            
+            28.text-decoration-color :
+                                        : type : colors of the line.
+            
+            29.text-decoration-style :
+                                        : type : solid,wavy,double,dashed,dotted,
+                                                none.
+
+            30.text-decoration-thickness:
+                                        : type :number;
+                                        : thick of your line.
+
+            31.shorthand property of text-decoration :
+                                        text-decoration :line color style;
+
+    -->
+    <style>
+
+        #box{
+            border: 1px solid red;
+            width: 200px;
+            padding: 20px;
+            text-align:justify ;
+            text-align-last: justify;
+            text-transform:capitalize;
+            text-indent:40px ;
+            word-spacing: 30px;
+            letter-spacing: 30px;
+            text-decoration: underline green double;
+        }
+        #box2{
+            border: 1px solid black;
+            width: 180px;
+            text-decoration-line:underline ;
+            text-decoration-color: red;
+            text-decoration-style:double;
+            line-height: 20px;
+            text-decoration-thickness:4px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, facilis? Animi fugiat asperiores consequatur aliquam quibusdam velit ratione sint, esse recusandae non consequuntur dicta fuga, neque eum obcaecati perferendis debitis?</p>
+    </div>
+    <div id="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, facilis? Animi fugiat asperiores consequatur aliquam quibusdam velit ratione sint, esse recusandae non consequuntur dicta fuga, neque eum obcaecati perferendis debitis?</p>
+    </div>
+</body>
+</html>
